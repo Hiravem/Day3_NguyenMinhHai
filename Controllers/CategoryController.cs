@@ -105,6 +105,36 @@ namespace Day3_NguyenMinhHai.Controllers
             existingCategory.Name = category.Name;
             return RedirectToAction(nameof(Index));
         }
+        // GET: Category/Delete/5
+        public IActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var category = _categories.FirstOrDefault(category => category.Id == id);
+            if (category == null)
+            {
+                return NotFound();
+            }
+
+            return View(category);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            var category = _categories.FirstOrDefault(item => item.Id == id);
+            if (category == null)
+            {
+                return NotFound();
+            }
+
+            _categories.Remove(category);
+            return RedirectToAction(nameof(Index));
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

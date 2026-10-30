@@ -512,3 +512,4 @@ E:\vscoder\Day3_NguyenMinhHai\bin\DetailsCheck\ru\Microsoft.CodeAnalysis.Workspa
 E:\vscoder\Day3_NguyenMinhHai\bin\DetailsCheck\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 E:\vscoder\Day3_NguyenMinhHai\bin\DetailsCheck\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 E:\vscoder\Day3_NguyenMinhHai\bin\DetailsCheck\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\vscoder\Day3_NguyenMinhHai\obj\Debug\net10.0\Day3_NguyenMinhHai.sourcelink.json
